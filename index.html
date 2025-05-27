@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+
+  <!-- Rating state start -->
+     <div class="rating-container" id="ratingContainer">
+    <img src="images/icon-star.svg" alt="star icon" class="star-icon">
+    <h1 class="title"> How did we do?</h1>
+    <p class="description">
+      Please let us know how we did with your support request.
+       All feedback is appreciated to help us improve our offering!
+    </p>
+    <div class="rating-numbers" id="ratingNumbers">
+      <button class="rating-btn" data-value="1">1</button>
+      <button class="rating-btn" data-value="2">2</button>
+      <button class="rating-btn" data-value="3">3</button>
+      <button class="rating-btn" data-value="4">4</button>
+      <button class="rating-btn" data-value="5">5</button>
+    </div>
+    <button class="submit-btn" id="submitRating" >Submit</button>
+
+  </div>
+  <!-- Thank you state start -->
+  <div class="thank-you" id="thankYou" style="display: none;">
+      <img src="images/illustration-thank-you.svg" alt="thank you illustration" class="thank-you-img">
+      <p class="selection">You selected <span id="selectedRating">0</span> out of 5</p>
+      <h2 class="title">Thank you!</h2>
+      <p class="description">We appreciate you taking the time to give a rating.
+         If you ever need more support, don’t hesitate to get in touch!
+        </p>
+    </div>
+  <!-- Thank you state start -->
+</body>
+</html>
