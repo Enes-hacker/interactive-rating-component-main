@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const selectedRatingSpan = document.getElementById('selectedRating');
   let selectedRating = null;
 
+  const main = document.getElementById("background");
+    for (let i = 0; i < 200; i++) {
+        const span = document.createElement("span");
+        main.appendChild(span);
+    }
+
   ratingButtons.forEach(button => {
     button.addEventListener('click', () => {
       // Remove 'selected' class from all buttons
